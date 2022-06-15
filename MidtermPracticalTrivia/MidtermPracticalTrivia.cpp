@@ -22,12 +22,16 @@ int main()
 void Trivia()
 {
 	int choice = ValidateInput("\nWelcome to the trivia!\nDo you want to test your skills?\n1.YES\n2.NO\nAnser");
-	while (choice == 1)
+	while (choice == 1 && score <= 1000) 
 	{
 		AskQuestion();
 		print << "\n";
 		system("pause"); clearConsole;
 		choice = ValidateInput("\nDo you want to play again?\n1.YES\n2.NO\nAnswer");
+	}
+	if (score >= 1000)
+	{
+		print << "\nCongratulations! you passed the hidden goal of 1000 POINTS!";
 	}
 	print << "\nTOTAL SCORE: " << score;
 }
