@@ -14,6 +14,7 @@ ipch
 !CreateMain.exe
 /UnitTester/Defines.h
 .vs
+#Extra information form the visual studio template
 # User-specific files
 *.rsuser
 *.suo
